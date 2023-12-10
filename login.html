@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7E57C2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 300px;
+            background-color: rgb(184, 115, 227);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-header {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-btn {
+            background-color: rgb(111, 10, 173);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+           
+        }
+
+        .login-btn:hover {
+            background-color: #512DA8;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Login</h2>
+        </div>
+        <div class="login-form">
+            <form method="post" action="login.php">
+                <input type="text" class="login-input" name="username" placeholder="Username" required>
+                <input type="password" class="login-input" name="password" placeholder="Password" required><br>
+                <button class="login-btn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

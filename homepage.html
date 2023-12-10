@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kannur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(184, 115, 227);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .place-box {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .place-box:hover {
+            transform: scale(1.05);
+        }
+
+        .place-box img {
+            width:  200%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .place-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Kannur</h1>
+    </header>
+
+    <nav>
+        <a href="hotel.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="homepage.html">Places</a>
+    </nav>
+
+    <section class="search-container">
+        <form action="#" method="get" class="search-form">
+            <label for="places">Search for a Place:</label>
+            <select id="places" class="search-box" onchange="goToSelectedPlace()">
+                <option value="" disabled selected>Select a place</option>
+                <option value="payyambalam">Payyambalam beach</option>
+                <option value="muzhapilangad">Muzhapilangad beach</option>
+                <option value="kannur-lighthouse">Kannur lighthouse</option>
+                <option value="kannur-Fort">Kannur Fort</option>
+                <option value="Sneak-Park">Sneak-Park</option>
+                <option value="Arakkal-Muesum">Arakkal-Museum</option>
+                <option value="Palakkayam-Thattu">Palakkayam-Thattu</option>
+            </select>
+        </form>
+    </section>
+
+    <section>
+        <div class="place-box" onclick="location.href='payyambalam.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/1024px-Payyambalam_Beach_Back_Water_20180425181108.jpg" alt="Place 1">
+            <div class="place-info">
+                <h3>Payyambalam beach</h3>
+            </div>
+        </div>
+
+        <div class="place-box" onclick="location.href='muzhappilangad.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/Muzhappilangad_Drive-in_Beach_2_20180526213558.jpg" alt="Place 2">
+            <div class="place-info">
+                <h3>Muzhapilangad beach</h3>
+            </div>
+        </div>
+
+        <div class="place-box" onclick="location.href='kannurlight.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/4704394341_3cbe89f844_b_20180526212357.jpg" alt="Place 3">
+            <div class="place-info">
+                <h3>Kannur lighthouse</h3>
+            </div>
+        </div>
+
+        <div class="place-box" onclick="location.href='kannurfort.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/st_angelo_fort_kannur20131031115739_83_1_20180526215925.jpg" alt="Place 4">
+            <div class="place-info">
+                <h3>Kannur Fort</h3>
+            </div>
+        </div>
+
+        <div class="place-box" onclick="location.href='sneakpark.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/1024px-Parassini_SnakePark_Statue_20180526205714.JPG" alt="Place 5">
+            <div class="place-info">
+                <h3>Sneak Park</h3>
+            </div>
+        </div>
+
+        <div class="place-box" onclick="location.href='arakkal.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/arakkal_kettu_museum_kannur20131206112854_84_1_20180517135657.jpg" alt="Place 6">
+            <div class="place-info">
+                <h3>Arakkal museum</h3>
+            </div>
+        </div>
+
+        <div class="place-box" onclick="location.href='palakkayamthatt.html';">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/2palakkayam-thattu4.jpg.image.784.410_20180526203513.jpg" alt="Place 7">
+            <div class="place-info">
+                <h3>Palakkayam Thattu</h3>
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+
+</body>
+
+</html>

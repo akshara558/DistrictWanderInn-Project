@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <style>
+    body {
+      font-family: 'Hedvig Serif', 'Georgia', serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: rgb(184, 115, 227);
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      box-sizing: border-box;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hotel-info {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .booking-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: rgb(184, 115, 227);
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(184, 115, 227) ;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Serif:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Surya Heritage Hotel</h1>
+    <p>Your Comfort, Our Priority</p>
+  </header>
+
+  <section class="hotel-info">
+    <h2>About Our Hotel</h2>
+    <p>The Surya Heritage is located in the heart of Kannur town, in the North Kerala. The region is popularly known as Malabar a geography globally identified for its rich Hospitality & authentic and amazing Kerala cuisines. .</p>
+
+    <h2>Contact Information</h2>
+    <p><strong>Address:</strong> Near Registrar Office, Kannur</p>
+    <p><strong>Phone:</strong> +91 9895466414, 0495 2553590</p>
+    <p><strong>Email:</strong>bookingsuryaheritage@gmail.com </p>
+  </section>
+
+  <section class="booking-form">
+    <h2>Book Your Stay</h2>
+    <form action="surya.php" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="check-in">Check-in Date:</label>
+      <input type="date" id="check-in" name="check-in" required>
+
+      <label for="check-out">Check-out Date:</label>
+      <input type="date" id="check-out" name="check-out" required>
+
+      <label for="adults">Number of Adults:</label>
+      <input type="number" id="adults" name="adults" min="1" required>
+
+      <label for="children">Number of Children:</label>
+      <input type="number" id="children" name="children" min="0" required>
+
+      <label for="room-type">Room Type:</label>
+      <select id="room-type" name="room-type" required>
+        <option value="standard">Standard Room</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="suite">Suite</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+
+
+</body>
+
+</html>
